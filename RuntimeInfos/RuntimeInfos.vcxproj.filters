@@ -21,5 +21,8 @@
     <ClCompile Include="test_modules.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="check_runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -2,9 +2,12 @@
 
 extern int tester(void);
 extern int tester2(void);
+extern void check_runtime();
 
 int main(int argc, char** argv)
 {
+	check_runtime(); return 1;
+
 #ifdef _DLL
 	std::cout << "/MD used" << std::endl;
 #else
