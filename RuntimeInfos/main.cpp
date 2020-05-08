@@ -6,8 +6,9 @@ extern void check_runtime();
 
 int main(int argc, char** argv)
 {
-	check_runtime(); return 1;
-
+	check_runtime();
+	std::cout << "==========================" << std::endl;
+	
 #ifdef _DLL
 	std::cout << "/MD used" << std::endl;
 #else

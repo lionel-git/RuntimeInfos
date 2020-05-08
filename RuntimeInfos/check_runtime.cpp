@@ -70,11 +70,21 @@ void print_file_version(const TCHAR* pszFilePath)
 
 void check_runtime()
 {
-    char* system_root = std::getenv("SystemRoot");
-    std::string path = std::string(system_root) + "\\SYSTEM32\\VCRUNTIME140.dll";
+	std::string system32 = std::string(std::getenv("SystemRoot")) + "\\SYSTEM32\\";
+  
+	std::string path = system32 + "VCRUNTIME140.dll";
     std::cout << path << std::endl;
-
-
     print_file_version(path.c_str());
+
+	std::string path2 = system32 + "KERNEL32.dll";
+	std::cout << path2 << std::endl;
+	print_file_version(path2.c_str());
+
+
+
+
+
+
+
 
 }
